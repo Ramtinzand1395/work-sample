@@ -17,7 +17,7 @@ const Navbar = () => {
   }, []);
   return (
     <div
-      className={`fixed top-0 w-full h-[15vh] flex items-center justify-around transition-all duration-200 ${
+      className={`fixed top-0 w-full h-[15vh] flex items-center justify-around transition-all duration-200 z-40 ${
         navState ? "bg-blue-700 bg-opacity-80" : "bg-blue-400"
       }`}
     >
