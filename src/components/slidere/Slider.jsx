@@ -11,48 +11,52 @@ import { Autoplay } from "swiper/modules";
 
 function Slider() {
   return (
-    <div className="max-w-[1300px] rounded-md mx-auto bg-[#F6F6F6] p-5">
+    <div className="max-w-[1300px] rounded-md border-b-[1px] mx-auto bg-[#F6F6F6] p-5">
       <h1 className="text-center lg:text-[29px] text-[20px] mb-[2rem] font-b font-bold">
-        افتخار همکاری با بهترین برند ها
+        ما از چه تکنولوژی هایی استفاده میکنیم؟
       </h1>
       <Swiper
         autoplay={true}
         loop={true}
         spaceBetween={50}
-        slidesPerView={5}
+        slidesPerView={1}
         modules={[Autoplay]}
         breakpoints={{
           0: {
             slidesPerView: 1,
           },
           400: {
-            slidesPerView: 2,
+            slidesPerView: 1,
           },
           639: {
-            slidesPerView: 3,
+            slidesPerView: 1,
           },
           865: {
-            slidesPerView: 4,
+            slidesPerView: 1,
           },
           1000: {
-            slidesPerView: 5,
+            slidesPerView: 1,
           },
           1500: {
-            slidesPerView: 6,
+            slidesPerView: 1,
           },
           1700: {
-            slidesPerView: 7,
+            slidesPerView: 1,
           },
         }}
       >
         {dataSlider.map((item) => (
           <SwiperSlide>
-            <img
-              className="w-[144px] h-[120px]"
-              key={item.id}
-              src={item.slider1}
-              alt=""
-            />
+            <div className="flex justify-center">
+              <a href={`${item.detailse}`} target="_blank">
+                <img
+                  className="w-[900px] h-[330px] overflow-hidden border-none rounded-lg bg-transparent "
+                  key={item.id}
+                  src={item.slider1}
+                  alt=""
+                />
+              </a>
+            </div>
           </SwiperSlide>
         ))}
       </Swiper>
