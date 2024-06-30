@@ -1,14 +1,25 @@
-import React from "react";
+// components
+import { useEffect } from "react";
+import Detailse from "./components/detailse/Detailse";
 import Header from "./components/Header";
-import Navbar from "./components/navbar/Navbar";
 import Services from "./components/our-services/Services";
 
+import Price from "./components/Price/Price";
+import Slider from "./components/slidere/Slider";
+import { useChangetitle } from "./hooks/useTitle";
+
 const App = () => {
+  useEffect(() => {
+    useChangetitle("طراحی و کدنویسی اختصاصی سایت");
+  }, []);
+
   return (
     <div>
-      <Navbar />
       <Header />
       <Services />
+      <Price />
+      <Slider />
+      <Detailse />
     </div>
   );
 };

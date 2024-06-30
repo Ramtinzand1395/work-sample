@@ -16,6 +16,7 @@ const Navbar = () => {
     };
   }, []);
   return (
+<<<<<<< HEAD:src/components/navbar/Navbar.tsx
     <div
       className={`fixed top-0 w-full h-[15vh] flex items-center justify-around bg-blue-400 transition-all duration-200 ${
         navState ? "bg-blue-700 bg-opacity-80" : "bg-blue-400"
@@ -25,6 +26,11 @@ const Navbar = () => {
         <img src={logo} className="w-10 h-10" alt="" />
       </div>
       <div className=" text-white text-xl font-vazir cursor-pointer flex items-center justify-around w-[60vw]">
+=======
+    <div className="w-full h-[20vh] flex items-center justify-around bg-blue-400 ">
+      <div className="">logo</div>
+      <div className=" text-white font-semibold font-vazir cursor-pointer flex items-center justify-around w-[60vw]">
+>>>>>>> 94167fe7cbe465d0311446417b78e5d58e6afe2a:src/Layout/Navbar.jsx
         <p className="hover:text-red-500 transition-all duration-150">خدمات</p>
         <p className="hover:text-red-500 transition-all duration-150">
           قیمت ها
