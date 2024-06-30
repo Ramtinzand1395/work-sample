@@ -1,6 +1,5 @@
 import React from "react";
 import header from "../assets//header.jpg";
-import Navbar from "./navbar/Navbar";
 const Header = () => {
   return (
     <div className="w-full h-[80vh] bg-blue-700">
