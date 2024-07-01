@@ -1,8 +1,6 @@
-import React from "react";
-import { FaAddressBook } from "react-icons/fa";
 const Services = () => {
   return (
-    <div className="w-full h-[100vh]">
+    <div id="services" className="w-full h-max">
       <div className="">
         <h3 className="font-bold font-vazir text-center text-4xl my-4 ">
           خدمات
