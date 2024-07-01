@@ -13,7 +13,7 @@ function Detailse() {
   const [hoveredIndex, setHoveredIndex] = useState(null);
 
   return (
-    <div className="max-w-[1320px] mx-auto rounded-lg bg-[#FFFF] shadow-lg mt-[3rem]">
+    <div className="max-w-[1320px] mx-auto rounded-lg bg-[#FFFF] shadow-lg shadow-gray-400 mt-[3rem]">
       <div className="flex items-center gap-1 mt-6 mr-4 p-4">
         {startLocal.map((start, index) => (
           <span
@@ -94,7 +94,11 @@ function Detailse() {
       </div>
 
       <div className="flex flex-col items-center">
-        <img src={hero} alt="logo" className="rounded-lg w-[600px] mb-[1rem]" />
+        <img
+          src={hero}
+          alt="logo"
+          className="rounded-lg lg:w-[600px] w-[360px] mb-[1rem]"
+        />
 
         <div className="mb-6 flex flex-col">
           <p className="font-bold opacity-75">با ما در تماس باشید</p>

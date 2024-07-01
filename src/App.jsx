@@ -8,6 +8,7 @@ import Price from "./components/Price/Price";
 import Slider from "./components/slidere/Slider";
 import { useChangetitle } from "./hooks/useTitle";
 import CallIcon from "./components/element/CallIcon";
+import Work from "./components/Worksamples/Work";
 
 const App = () => {
   useEffect(() => {
@@ -22,6 +23,7 @@ const App = () => {
       <Slider />
       <Detailse />
       <CallIcon />
+      <Work />
     </div>
   );
 };
