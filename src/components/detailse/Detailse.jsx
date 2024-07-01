@@ -1,6 +1,13 @@
 import { useState } from "react";
-import { IoStarOutline } from "react-icons/io5";
 import { startLocal } from "../../data/LocalData";
+
+import hero from "../../assets/images/hero.webp";
+
+//icons
+
+import { RiWhatsappFill } from "react-icons/ri";
+import { BiLogoTelegram } from "react-icons/bi";
+import { FaLinkedin } from "react-icons/fa";
 
 function Detailse() {
   const [hoveredIndex, setHoveredIndex] = useState(null);
@@ -86,7 +93,22 @@ function Detailse() {
         </p>
       </div>
 
-      <div>left</div>
+      <div className="flex flex-col items-center">
+        <img src={hero} alt="logo" className="rounded-lg w-[600px] mb-[1rem]" />
+
+        <div className="mb-6 flex flex-col">
+          <p className="font-bold opacity-75">با ما در تماس باشید</p>
+          <div className="flex items-center mt-4 gap-2 justify-center">
+            <RiWhatsappFill
+              color="green"
+              size={29}
+              className="cursor-pointer"
+            />
+            <BiLogoTelegram color="blue" size={29} className="cursor-pointer" />
+            <FaLinkedin color="blue" size={29} className="cursor-pointer" />
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
