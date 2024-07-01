@@ -9,22 +9,36 @@ import Slider from "./components/slidere/Slider";
 import { useChangetitle } from "./hooks/useTitle";
 import CallIcon from "./components/element/CallIcon";
 import Work from "./components/Worksamples/Work";
+import Buttonup from "./components/ButtonUp/Buttonup";
+
+import "aos/dist/aos.css";
+import AOS from "aos";
 
 const App = () => {
   useEffect(() => {
     useChangetitle("طراحی و کدنویسی اختصاصی سایت");
   }, []);
 
+  useEffect(() => {
+    AOS.init({
+      duration: 2000,
+    });
+  }, []);
+
   return (
-    <div>
-      <Header />
-      <Services />
-      <Price />
-      <Slider />
-      <Detailse />
+    <>
+      <div data-aos="flip-left">
+        <Header />
+        <Services />
+        <Price />
+        <Slider />
+        <Detailse />
+        <Work />
+      </div>
+
       <CallIcon />
-      <Work />
-    </div>
+      <Buttonup />
+    </>
   );
 };
 

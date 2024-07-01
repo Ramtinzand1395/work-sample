@@ -19,7 +19,7 @@ function Work() {
                 alt=""
               />
             </a>
-            <p className="text-sm opacity-75 text-center mt-5">
+            <p className="text-sm font-bold opacity-75 text-center mt-5">
               {items.detailse}
             </p>
             <a href={items.path}>

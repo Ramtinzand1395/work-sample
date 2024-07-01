@@ -13,6 +13,7 @@ import mamanpaz from "../assets/worker/mamanpaz.png";
 import delino from "../assets/worker/delino.png";
 import panel from "../assets/worker/panel.png";
 import sorena from "../assets/worker/sorena.png";
+import rojan from "../assets/worker/rojan.png";
 
 // icon
 import { IoStarOutline } from "react-icons/io5";
@@ -70,5 +71,11 @@ export const workers = [
     image: panel,
     path: "https://admin-panel-seven-beta.vercel.app/",
     detailse: "قالب طراحی شده پنل ادمین",
+  },
+  {
+    id: 6,
+    image: rojan,
+    path: "https://rojashop.com/",
+    detailse: "سایت فروش لوازم آرایشی",
   },
 ];
