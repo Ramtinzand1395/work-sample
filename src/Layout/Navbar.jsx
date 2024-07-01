@@ -55,7 +55,7 @@ const Navbar = () => {
             09138433385
           </p>
           <p className="hover:text-white cursor-pointer text-white font-semibold">
-            09138433385
+          09354378110
           </p>
         </div>
       </div>
