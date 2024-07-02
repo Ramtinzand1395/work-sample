@@ -1,4 +1,3 @@
-import React from "react";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -11,7 +10,10 @@ import { Autoplay } from "swiper/modules";
 
 function Slider() {
   return (
-    <div className="max-w-[1300px] rounded-md border-b-[1px] mx-auto bg-[#F6F6F6] p-5">
+    <div
+      id="tech"
+      className="max-w-[1300px] rounded-md border-b-[1px] mx-auto bg-[#F6F6F6] p-5"
+    >
       <h1 className="text-center lg:text-[29px] text-[20px] mb-[2rem] font-b font-bold">
         ما از چه تکنولوژی هایی استفاده میکنیم؟
       </h1>
@@ -45,8 +47,8 @@ function Slider() {
           },
         }}
       >
-        {dataSlider.map((item) => (
-          <SwiperSlide>
+        {dataSlider.map((item, index) => (
+          <SwiperSlide key={index}>
             <div className="flex justify-center">
               <a href={`${item.detailse}`} target="_blank">
                 <img

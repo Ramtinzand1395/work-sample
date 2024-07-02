@@ -3,7 +3,7 @@ import { workers } from "../../data/LocalData";
 
 function Work() {
   return (
-    <div className="mt-[6rem] max-w-[1300px] flex flex-col items-center mx-auto">
+    <div id="worksample" className="mt-[6rem] max-w-[1300px] flex flex-col items-center mx-auto">
       <h1 className="text-center text-2xl">نمونه کارهای طراحی و کدنویسی شده</h1>
 
       <div className="grid xl:grid-cols-3 lg:grid-cols-3 md:grid-cols-1 gap-8 mt-9">

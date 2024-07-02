@@ -56,8 +56,12 @@ const Navbar = () => {
         </div>
       </div>
       {/* MOBILE */}
-    {  console.log(OpenNavbar)}
-      <div className={`md:hidden block absolute top-0 right-0 h-[100vh] w-[40vw] bg-blue-500 p-4 ${OpenNavbar ? " navbarClose": "navbarOpen"} `}>
+      {console.log(OpenNavbar)}
+      <div
+        className={`md:hidden block absolute top-0 right-0 h-[100vh] w-[40vw] bg-blue-500 p-4 ${
+          OpenNavbar ? " navbarClose" : "navbarOpen"
+        } `}
+      >
         <div className="flex items-center justify-between md:hidden ">
           <img src={logo} className="w-10 h-10" alt="" />
           <MdClose
@@ -76,12 +80,16 @@ const Navbar = () => {
               قیمت ها
             </p>
           </a>
-          <p className="hover:text-red-500 transition-all duration-150">
-            مقالات
-          </p>
-          <p className="hover:text-red-500 transition-all duration-150">
-            نمونه کار ها
-          </p>
+          <a href="#tech">
+            <p className="hover:text-red-500 transition-all duration-150">
+              مقالات
+            </p>
+          </a>
+          <a href="#worksample">
+            <p className="hover:text-red-500 transition-all duration-150">
+              نمونه کار ها
+            </p>
+          </a>
         </div>
       </div>
       <div className="w-auto flex items-center border-2 border-white rounded-md">
