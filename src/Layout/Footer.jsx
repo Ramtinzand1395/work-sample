@@ -21,7 +21,10 @@ function Footer() {
             <a href="tel:09354378110" className="">
               09354378110
             </a>
-            {/* javananweb0098 */}
+          </div>
+          <div className="flex items-center mt-4 gap-2 text-white font-bold">
+            <p>ایمیل:</p>
+            <a href="mailto:javananweb0098@gmail.com">javananweb0098</a>
           </div>
         </div>
 
