@@ -116,3 +116,12 @@ body {
     display: block;
   }
 }
+
+.img {
+  mix-blend-mode: color-burn;
+}
+
+.imagefooter {
+  background-image: url("/src/assets/images/coding.webp");
+  background-repeat: no-repeat;
+}

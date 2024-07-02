@@ -13,6 +13,8 @@ import Buttonup from "./components/ButtonUp/Buttonup";
 
 import "aos/dist/aos.css";
 import AOS from "aos";
+import BtnShow from "./components/btnShow/BtnShow";
+import Prices from "./components/prices/Prices";
 
 const App = () => {
   useEffect(() => {
@@ -34,10 +36,14 @@ const App = () => {
         <Slider />
         <Detailse />
         <Work />
+        <BtnShow />
+        <Prices />
       </div>
 
-      <CallIcon />
-      <Buttonup />
+      <div>
+        <CallIcon />
+        <Buttonup />
+      </div>
     </>
   );
 };

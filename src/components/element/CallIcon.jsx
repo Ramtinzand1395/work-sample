@@ -9,7 +9,7 @@ function CallIcon() {
   };
 
   return (
-    <div className="fixed right-[2rem] bottom-[3rem]">
+    <div className="fixed right-[0.3rem] bottom-[3rem]">
       <div className="icon-container" onClick={handleIconClick}>
         <div className="pulse-ring"></div>
         <div className="icon relative cursor-pointer">
@@ -19,7 +19,7 @@ function CallIcon() {
       {showNumbers && (
         <div
           className={` w-[200px] absolute bg-white flex flex-col top-[-1.3rem] ${
-            showNumbers ? "right-[-2rem]" : "right-0"
+            showNumbers ? "right-[-0.3rem]" : "right-0"
           } p-4 rounded-lg items-center`}
         >
           <a href="tel:09138433385" className="number">
