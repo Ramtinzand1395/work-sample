@@ -10,8 +10,8 @@ const Header = () => {
           <p className="text-black md:text-lg text-xs">
             اگر بزینس خودتو داری و میخوای به درآمادم بالا برسی همین الان شروع کن
           </p>
-          <div className="flex items-center justify-around w-full">
-            <div className="relative rounded px-5 py-2.5 overflow-hidden group bg-green-500  hover:bg-gradient-to-r hover:from-green-500 hover:to-green-400 text-white hover:ring-2 hover:ring-offset-2 hover:ring-green-400 transition-all ease-out duration-300">
+          <div className="flex flex-col md:flex-row items-center justify-around w-full">
+            <div className=" my-10 md:my-0 relative rounded px-5 py-2.5 overflow-hidden group bg-green-500  hover:bg-gradient-to-r hover:from-green-500 hover:to-green-400 text-white hover:ring-2 hover:ring-offset-2 hover:ring-green-400 transition-all ease-out duration-300">
               <span className="absolute right-0 w-8 h-32 -mt-12 transition-all duration-1000 transform translate-x-12 bg-white opacity-10 rotate-12 group-hover:-translate-x-40 ease"></span>
               <span className="relative">ثبت سفارش</span>
             </div>
